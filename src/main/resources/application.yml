@@ -1,0 +1,28 @@
+#mysql 설정
+spring:
+  r2dbc:
+    url: r2dbc:mysql://127.0.0.1:3306/kkul?useUnicode=true&characterEncoding=utf8
+    username: userId # 각각 작성하세요
+    password: password # 각각 작성하세요
+# h2 설정
+#spring:
+#  sql:
+#    init:
+#      schema-locations: classpath*:db/sql/schema.sql
+#      data-locations: classpath*:db/sql/membership.sql
+#  r2dbc: # (1)
+#    url: r2dbc:h2:mem:///kkul;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+#    username: sa
+#    password:
+
+#mongodb 설정
+#spring:
+#  data:
+#    mongodb:
+#      database: kkul
+#      #      username:
+#      #      password:
+#      host: localhost
+#      port: 27017
+#
+#server.error.include-message: always
